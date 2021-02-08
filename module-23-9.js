@@ -1,22 +1,9 @@
-const person = {name: 'sumon', age: 25, job: 'facekbooker', gfName: 'sona moina', address: 'AndulBaria', phone:'01960952425',friends: ['limon', 'jontu', 'jewell']}
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//const part = nums.slice(3, 7);
+// const part = nums.splice(3,5, 77, 88);
+// console.log(part);
+// console.log(nums);
 
 
-// const gfName = person.gfName;
-// const phone = person.phone;
-
-/*const {phone, gfName, friends, address} = person;
-console.log(gfName, phone, address);*/
-
-
-const  friends = ['rahim', 'korim', 'jarim', 'marim', 'farim'];
-const [first, next, ...bakifriends] = friends;
-console.log(first, next);
-
-// const complexObject = {
-//     name: 'abc',
-//     info:{
-//         address: 'kola bagan'
-//         leader: 'Tiger leader'
-//     }
-// }
-// const {leader} = complexObject.info;
+const together = nums.join(":Sumon, ")
+console.log(together)

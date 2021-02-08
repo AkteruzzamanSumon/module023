@@ -1,18 +1,17 @@
-class Parent{
-    constructor(){
-        this.fatherName = "jakir";
+function stopWatch(){
+    let count = 0;
+    return function(){
+        count++;
+        return count;
     }
 }
-class Child extends Parent{ 
-    constructor(name){
-        super();
-        this.name = name;
-    }
-    getFullName(){
-        return this.name + " " + this.fatherName;
-    }
-}
-const baby = new Child("sumon");
-const baby2 = new Child("shopna");
-console.log(baby.getFullName());
-console.log(baby2.getFullName());
+const clock1 = stopWatch();
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+console.log(clock1());
+
+const clock2 = stopWatch();
+console.log(clock2());
+console.log(clock2());
+console.log(clock1());

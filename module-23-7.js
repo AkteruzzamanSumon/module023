@@ -1,12 +1,9 @@
-class Student{
-    constructor(sId, sName, sAge){
-        this.id = sId;
-        this.name = sName;
-        this.age = sAge;
-        this .school = "Andulbaia School";
-    }
+let bonus = 20;
+function sum(first, second){
+    let result = first + second + bonus;
+    console.log(bonus);
+    return result;
 }
+const output =sum(5,5);
 
-const student1 = new Student(11, "Sumon", 25);
-const student2 = new Student(7, "Akter", 27 );
-console.log(student1, student2);
+console.log(output)
